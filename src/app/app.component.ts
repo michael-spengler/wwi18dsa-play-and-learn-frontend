@@ -24,6 +24,10 @@ export class AppComponent {
     this.view = target;
   }
 
+  public onClickMe() {
+    alert('allllöööört');
+  }
+
   private getNavBarData(): INavbarData {
     return {
       // replace the following by your data...

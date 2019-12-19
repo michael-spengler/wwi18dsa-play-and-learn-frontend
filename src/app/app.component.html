@@ -1,5 +1,10 @@
 <lib-navbar [navBarData]="navBarData" (clickMenuEntry)="onClickMenuEntry($event)"></lib-navbar>
 
-<app-q-and-a *ngIf="view==='/landing'"></app-q-and-a>
+<div class="meinAbschnitt">
+  <app-q-and-a *ngIf="view==='/landing'"></app-q-and-a>
+  <app-contact *ngIf="view==='/contact'"></app-contact>
 
-<app-contact *ngIf="view==='/contact'"></app-contact>
+  <button (click)="onClickMe()">
+    Quiz Generieren
+  </button>
+</div>
