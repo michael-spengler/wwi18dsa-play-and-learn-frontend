@@ -28,6 +28,10 @@ export class AppComponent {
     alert('allllöööört');
   }
 
+  public onClickFeedback() {
+    alert('Hallo');
+  }
+
   private getNavBarData(): INavbarData {
     return {
       // replace the following by your data...
