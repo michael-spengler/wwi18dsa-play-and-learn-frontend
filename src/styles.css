@@ -1,1 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
+body, html{
+    background: #1c1c22;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 62.5%;
+}
+
+@media screen and (max-width: 800px){
+    body,html{
+        font-size: 48%;
+    }
+}
+
+@media screen and (min-width: 800px){
+    body,html{
+        font-size: 53%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    body,html{
+        font-size: 57%;
+    }
+}
+
+
+

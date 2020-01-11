@@ -1,5 +1,10 @@
-<lib-navbar [navBarData]="navBarData" (clickMenuEntry)="onClickMenuEntry($event)"></lib-navbar>
+<app-navbar></app-navbar>
 
-<app-q-and-a *ngIf="view==='/landing'"></app-q-and-a>
+<!-- <lib-navbar [navBarData]="navBarData" (clickMenuEntry)="onClickMenuEntry($event)"></lib-navbar> -->
+
+<div class="content">
+    <app-q-and-a *ngIf="view==='/landing'"></app-q-and-a>
+</div>
+
 
 <app-contact *ngIf="view==='/contact'"></app-contact>

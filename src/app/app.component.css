@@ -1,0 +1,54 @@
+.content{
+    font-size: 1.75rem;
+    margin-top: 20rem;  
+  }
+  
+  .content #QA{
+    text-align: center;
+  }
+  
+  #QA input[type="text"]{
+    width:80%; max-width: 500px;
+    height: 5rem;
+    font-size: 3rem;
+    text-align: center; 
+    box-sizing: border-box;
+    padding: 4px;
+    outline: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    vertical-align: middle;
+  }
+  
+  .content button{
+    font-size: 1.5rem; 
+    padding: 1rem 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #43c48a;
+    border: 2px solid silver;
+    background-image: linear-gradient(to top, gainsboro 0%, white 90%);
+    border-radius: 20px;
+  }
+  
+  .recentquest{
+    margin-top: 5rem;
+  }
+  
+  .generatebutton{
+    vertical-align: middle;
+    font-size: 1.5rem; 
+    padding: 1rem 126px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #43c48a;
+    border: 2px solid silver;
+    background-image: linear-gradient(to top, gainsboro 0%, white 90%);
+    border-radius: 20px;
+  }
+  
+  .impressum{
+    margin-top: 20rem;
+    padding: 2rem;
+    background-color: #32323b;
+    font-size: 1rem;
+  }
+  
+  

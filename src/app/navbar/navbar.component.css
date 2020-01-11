@@ -1,0 +1,302 @@
+/* Der folgende Abschnitt definiert die Komponenten die sowohl in der Mobilen Variante, als auch in der Desktop Variante der Webseite angezeigt werden. */
+
+/* Header stellt Hintergrundfarbe, Standardschriftart und auch die Größe des Menuleiste ein. Mithilfe von Rem bleibt alles flexibel und responsive. */
+header{
+    position: fixed;
+    top: 0;
+    background: #32323b;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    height: 60px;
+    height: 6rem;                       /* 1 Rem=10px */
+    z-index: 2;
+}
+
+/* Leftbox und Webtitle sind der Name der Webseite, welcher oben links angezeigt wird. */
+.leftbox{
+    margin-left: 4rem;
+    margin-top: -1.25rem;
+}
+
+#webtitle{
+    text-align: left;
+    font-size: 2.5rem;
+    color: #43c48a;
+    z-index: 3;
+}
+
+
+
+/* Der folgende Abschnitt dient zur Definition aller MenuInhalte vom Desktop-Menu */
+
+/* Responsive Einstellung, ab wann das Desktop-Menu nicht mehr angezeigt wird */
+@media screen and (max-width: 600px){
+    header nav#desktop{display: none}
+}
+
+.rightbox{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    text-align: right;
+    transition: 200ms all;
+}
+
+header nav#desktop ul{
+    margin: 0;
+    padding: 0;
+    transition: all 300ms;
+    display: inline-block;
+    
+}
+
+header nav#desktop ul li{
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    position: relative;
+    transition: all 300ms;
+}
+
+header nav#desktop ul li a{
+    display: inline-block;
+    height: 60px;
+    height: 4.25rem;
+    padding-top: 1.75rem;
+    min-width: 15rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #000000;
+    margin: 0 1px 0 0;
+    text-decoration: none;
+    background: #43c48a;
+    transition: all 300ms;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header nav#desktop ul li:hover > a{
+    background: #339c6d;
+}
+
+header nav#desktop ul li ul{
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transition: 300ms all;
+    max-height: 0;
+}
+
+header nav#desktop ul li ul li{
+    border-bottom: 1px solid #339c6d;
+}
+
+header nav#desktop ul li:hover > ul{
+    max-height: 700px;
+    transition: all 300ms;
+}
+
+
+
+/* Im folgenden Abschnitt wird das Mobile Menu designt */
+
+/* Mithilfe der Media Screen Abfrage wird das Mobile Menu aktiviert und das Desktop Menu deaktiviert, wenn das Fenster kleiner als 600px groß ist. */
+@media screen and (min-width: 600px){
+    header nav#mobile{display:none}
+}
+
+/* Alle wichtigen Einstellungen für das Burger Menu an sich. */
+#menuToggle
+{
+    display: block;
+    position: absolute;
+    top: 1.7rem;
+    right: 2rem;
+    -webkit-user-select: none;
+    user-select: none;
+}
+ 
+#menuToggle li a{
+    text-decoration: none;
+    color: #43c48a;
+    transition: color 0.3s ease;
+}
+
+/* Größe des Inputfeldes festlegen, damit überall auf dem Icon geklickt werden kann */
+#menuToggle input{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+
+    cursor: pointer;
+
+    /* Input Feld wird versteckt und über das Burger Icon gelegt */
+    opacity: 0;  
+    z-index: 4; 
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: #43c48a;
+    border-radius: 3px;
+
+    z-index: 3;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+}
+
+/* Transition vom Burger Menu zum Kreuz, dazu wird erster und letzter Span gedreht und Mittlere Linie ausgeblendet */
+#menuToggle span:first-child{
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2){
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #43c48a;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2){
+    transform: rotate(-45deg) translate(0, -1px);
+}
+ 
+
+/* Hiermit wird das Menu mit seinen Unterpunkten an sich designt */
+#menu{
+    text-align: center;
+    position: absolute;
+    top: 2.3rem;
+    right: -100%;
+    width: 80rem;
+    font-size: 2rem;
+
+    background: #32323b;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+
+    transform-origin: 0% 0%;
+    transform: translate(0, -200%);
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    z-index: -1;
+}
+
+/* Leider ist das Menu vom Burger Icon abhängig, weshalb sich die Textausrichtung als schwierig heausstellte. Aus diesem Grund habe ich mit der Media Screen Abfrage dem nach linksrutschen des Textes gegengesteuert. */
+@media screen and (max-width: 550px){
+    #menu{
+        width: 70rem;
+        right: -50%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #menu{
+        width: 65rem;
+        right: -50%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    #menu{
+        width: 60rem;
+        right: -50%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    #menu{
+        width: 55rem;
+        right: -50%;
+    }
+}
+
+/* Die Kästen für die einzelnen Menu-Punkte */
+#menu li{
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 100%;
+    list-style: none;
+    position: relative;
+    transition: all 500ms;
+}
+
+#menu li a{
+    display: inline-block;
+    padding: 2.17rem 5% 2.17rem 5%;
+    min-width: 12rem;
+    width: 90%;
+    text-align: center;
+    font-size: 2rem;
+    color: #000000;
+    margin: 0 1px 0 0;
+    text-decoration: none;
+    background: #43c48a;
+    transition: all 300ms;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Einstellung, dass der Hintergrund der Box dunkler beim drüber hovern wird */
+header nav#mobile li:hover > a{
+    background: #339c6d;
+}
+
+#menu li ul{
+    width: 100%;
+    transition: all 500ms;
+    max-height: 0;
+    overflow: hidden;
+    float: left;
+}
+
+#menu li ul li{
+    list-style-type: none;
+    display: block;
+    right: 5rem;
+    background: rgb(197, 197, 197);
+    transition: all 500ms;
+}
+
+#menu li ul li:hover > a{
+    background: rgb(141, 141, 141);
+}
+
+#menu li ul li a{
+    background: rgb(197, 197, 197);
+}
+
+#menu li:hover > ul{
+    max-height: 500px;
+}
+
+#menuToggle input:checked ~ ul{
+    transform: none;
+}
+
+#menu li ul li{
+    list-style-type: none;
+}
