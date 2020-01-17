@@ -1,1 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
+/* My stuff */
+
+body{
+    margin: 0;
+    padding: 0;
+    background: wheat;
+  }
+  .eyes{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: left;
+  }
+  .eye{
+    width: 240px;
+    height: 120px;
+    background: #fff;
+    display: inline-block;
+    margin: 40px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ball{
+    width: 40px;
+    height: 40px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    border: 15px solid #333;
+  }

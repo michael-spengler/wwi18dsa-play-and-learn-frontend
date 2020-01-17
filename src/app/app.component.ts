@@ -36,7 +36,7 @@ export class AppComponent {
       },
       {
         isActive: false,
-        text: 'Menu Entry 2',
+        text: 'Weird Eyes',
         href: '/menuEntry2',
       },
       {
