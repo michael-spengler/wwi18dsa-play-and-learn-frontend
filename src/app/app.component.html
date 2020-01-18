@@ -4,7 +4,15 @@
 
 <div class="content">
     <app-q-and-a *ngIf="view==='/landing'"></app-q-and-a>
+    
+    <div class="Anmeldung">
+        <h1>Anmelden</h1>
+        <input type="text" placeholder ="Vorname" id="Fname"><br><br>
+        <input type="text" placeholder ="Nachname" id="Lname"><br><br>
+        <input type="email" placeholder ="E-Mail Adresse" id="Eadr"><br><br>
+        <br>
+        <button (click)="myfunc()">Anmelden</button>
+    </div>
 </div>
-
 
 <app-contact *ngIf="view==='/contact'"></app-contact>

@@ -24,6 +24,15 @@ export class AppComponent {
     this.view = target;
   }
 
+  public myfunc(){
+
+    var FName = (<HTMLInputElement>document.getElementById("Fname")).value;
+    var LName = (<HTMLInputElement>document.getElementById("Lname")).value;
+    var Eadr= (<HTMLInputElement>document.getElementById("Eadr")).value;
+  
+    alert("Hallo " + FName + " " + LName + ", wir heißen dich herzlich willkommen auf unserer Play&Learn-Seite! Du hast dich gerade mit folgender E-Mail angemeldet: " + Eadr + " .")
+  }
+  
   private getNavBarData(): INavbarData {
     return {
       // replace the following by your data...
@@ -47,3 +56,5 @@ export class AppComponent {
     };
   }
 }
+
+
