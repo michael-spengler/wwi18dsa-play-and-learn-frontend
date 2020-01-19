@@ -1,4 +1,9 @@
+html {
+  background-color: azure
+}
+
 div {
   margin-top: 100px;
   text-align: center;
+  background-color: azure
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { INavbarData } from 'ng-responsive-navbar';
+import { getCurrencySymbol } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,7 @@ import { INavbarData } from 'ng-responsive-navbar';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'play-and-learn-frontend';
+  title = 'Gruppenprojekt';
 
   public navBarData: INavbarData;
   public view = '/landing';
@@ -27,22 +28,31 @@ export class AppComponent {
   private getNavBarData(): INavbarData {
     return {
       // replace the following by your data...
-      logoURL: 'http://wwi18dsa.de/getAsset/logo',
-      appTitle: 'Play And Learn',
+      logoURL: 'https://www.thesun.co.uk/wp-content/uploads/2017/05/nintchdbpict0003267145421.jpg',
+      appTitle: 'Miriams tolle Website',
       menuEntries: [{
         isActive: true,
-        text: 'Home',
+        text: 'Startseite',
         href: '/landing',
       },
       {
         isActive: false,
-        text: 'Menu Entry 2',
-        href: '/menuEntry2',
+        text: 'Gelaber',
+        href: '/Gelaber',
       },
       {
         isActive: false,
-        text: 'Contact',
-        href: '/contact',
+        text: 'Video',
+        href: '/video',
+      },      {
+        isActive: false,
+        text: 'Surprise',
+        href: '/button',
+      },
+      {
+        isActive: false,
+        text: 'Kontakt',
+        href: '/contact2',
       }]
     };
   }

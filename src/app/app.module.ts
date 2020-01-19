@@ -8,13 +8,19 @@ import { NavbarModule } from 'ng-responsive-navbar';
 import { DisclaimerModule } from 'german-legal-disclaimer';
 import { NgQAndAModule } from 'ng-q-and-a';
 import { QAndAComponent } from './q-and-a/q-and-a.component';
+import { GelaberComponent } from './gelaber/gelaber.component';
+import { VideoComponent } from './video/video.component';
+import { ButtonComponent } from './button/button.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactComponent,
-    QAndAComponent
+    QAndAComponent,
+    GelaberComponent,
+    VideoComponent,
+    ButtonComponent,
   ],
   imports: [
     DpsModule,
