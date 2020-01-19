@@ -19,6 +19,10 @@
     "@angular/platform-browser": "~8.2.7",
     "@angular/platform-browser-dynamic": "~8.2.7",
     "@angular/router": "~8.2.7",
+    "angular": "^1.7.9",
+    "jquery": "^3.4.1",
+    "jquerz": "0.0.1-security",
+    "js-to-ts-converter": "^0.16.3",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
