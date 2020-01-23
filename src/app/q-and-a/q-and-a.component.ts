@@ -15,7 +15,17 @@ export class QAndAComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {      
+    }
+    public filterrating(){
+      var radios: any = document.getElementsByName("stern");
+  
+      for (var i = 0, length = radios.length; i < length; i++) {
+        if (radios[i].checked) {
+          alert(radios[i].value);
+          break;
   }
 
-}
+      }
+    }
+  }

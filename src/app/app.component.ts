@@ -26,7 +26,6 @@ export class AppComponent {
 
   private getNavBarData(): INavbarData {
     return {
-      // replace the following by your data...
       logoURL: 'http://wwi18dsa.de/getAsset/logo',
       appTitle: 'Play And Learn',
       menuEntries: [{
@@ -38,6 +37,11 @@ export class AppComponent {
         isActive: false,
         text: 'Menu Entry 2',
         href: '/menuEntry2',
+      },
+      {
+        isActive: false,
+        text: 'Play',
+        href: '/play',
       },
       {
         isActive: false,

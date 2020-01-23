@@ -1,3 +1,58 @@
 div {
   margin-top: 100px;
 }
+#legende{
+  padding:20px;
+  text-align:center
+}
+fieldset{
+  display: block;
+  text-align: center;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0em;
+    padding-inline-start: 0em;
+    padding-inline-end: 0em;
+    padding-block-end: 0em;
+    min-inline-size: min-content;
+    border-width: 0px;
+    border-style: 0;
+    border-color: 0;
+    border-image: 0;
+}
+
+.filter{
+  text-align: center;
+}
+.review__rating_1{
+  margin: 2px;
+  border-radius: 5px;
+  padding-bottom: 0;
+  font-size:1.6em;
+}
+
+.review__rating_2{
+  padding-bottom: 0;
+  font-size:1.6em;
+}
+
+.review__rating_3{
+  padding-bottom: 0;
+  font-size:1.6em;
+}
+.review__rating_4{
+  padding-bottom: 0;
+  font-size:1.6em;
+
+}
+.review__rating_5{
+  padding-bottom: 0;
+  font-size:1.6em;
+}
+.user_rating_f{
+  margin:0;
+  padding: 0;
+}
+.Stern{
+  color: #d33454;
+}

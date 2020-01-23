@@ -1,0 +1,31 @@
+<div class="play"></div>
+
+<div class="surr">
+    <div class="placeholder">Placeholder Rätsel</div>
+</div>
+
+<div class="surr-stern">
+    <form class="review" action="/reviews/" method="POST">
+        <fieldset>
+            <div class="review__rating">
+                <input type="radio" id="1" name="rating" value="1" required />
+                <label for="1" aria-label="1 Star">☆</label>
+                <input type="radio" id="2" name="rating" value="2" required />
+                <label for="2" aria-label="2 Stars">☆</label>
+                <input type="radio" id="3" name="rating" value="3" required />
+                <label for="3" aria-label="3 Stars">☆</label>
+                <input type="radio" id="4" name="rating" value="4" required />
+                <label for="4" aria-label="4 Stars">☆</label>
+                <input type="radio" id="5" name="rating" value="5" required />
+                <label for="5" aria-label="5 Stars">☆</label>
+            </div>
+        </fieldset>
+        <input class="review__button"  type="button" (click)="ratingjson()" value="Submit Review" />
+    </form>
+    <div class="ratingtable">
+        <div class="user_ratings">
+
+    </div>
+    </div>
+
+
