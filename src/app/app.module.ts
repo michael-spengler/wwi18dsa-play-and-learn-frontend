@@ -8,13 +8,15 @@ import { NavbarModule } from 'ng-responsive-navbar';
 import { DisclaimerModule } from 'german-legal-disclaimer';
 import { NgQAndAModule } from 'ng-q-and-a';
 import { QAndAComponent } from './q-and-a/q-and-a.component';
+import { UnterseiteComponent } from './unterseite/unterseite.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactComponent,
-    QAndAComponent
+    QAndAComponent,
+    UnterseiteComponent
   ],
   imports: [
     DpsModule,

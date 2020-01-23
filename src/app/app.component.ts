@@ -36,8 +36,8 @@ export class AppComponent {
       },
       {
         isActive: false,
-        text: 'Menu Entry 2',
-        href: '/menuEntry2',
+        text: 'Test-Unterseite',
+        href: '/unterseite',
       },
       {
         isActive: false,
