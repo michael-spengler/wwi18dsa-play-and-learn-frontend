@@ -9,8 +9,43 @@
 </head>
 <body style="margin: 0; padding-bottom: 100px">
   <app-root></app-root>
-  hallo
+<script>
+function buttonclickHandler() {
+    
+    var username= document.getElementById("InputUsername").value;
+    var text = document.getElementById("exampleFormControlTextarea").value;
+   
+    if (document.getElementById("stern5").checked == true){
+        var sterne = "5 ☆"
+    }
+    if (document.getElementById("stern4").checked == true){
+        var sterne = "4 ☆"
+    }
+    if (document.getElementById("stern3").checked == true){
+        var sterne = "3 ☆"
+    }
+    if (document.getElementById("stern2").checked == true){
+        var sterne = "2 ☆"
+    }
+    if (document.getElementById("stern1").checked == true){
+        var sterne = "1 ☆"
+    }
+    
+
+    var table = document.getElementById("mytable");
+    var row = table.insertRow(0);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    cell1.append(username);
+    cell2.append(text);
+    cell3.append(sterne)
+    
+  }
+</script>
+  
 </body>
 
 
 </html>
+

@@ -1,0 +1,110 @@
+<style src="feedback.component.css"></style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<title>Feedback!</title>
+ <br><br>
+
+ <div class="Hintergrund">
+    <div class="container" >
+        <br><br>
+            <h1> Vielen Dank, dass Sie unsere Seite bewerten möchten!</h1> <br>
+            <h4> Ihr Feedback hilft uns, die Seite ständig zu verbessern <br> und ein optimales Nutzererlebnis für Sie zu gestalten.</h4> <br><br>
+                
+        
+    
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" id="InputEmail" ng-model="email" aria-describedby="emailHelp" placeholder="Bitte geben Sie ihre Email-Adresse ein">
+            <small id="emailHelp" class="form-text text-muted">Ihre persönlichen Daten werden im Feedback nicht mitveröffentlicht! </small>
+        </div>
+        <div class="form-group">
+            <label for="InputUsername">Username</label>
+            <input type="text" class="form-control" id="InputUsername" placeholder="Geben Sie ihren Username ein.">
+            <small id="usernamehelp" class="form-text text-muted">Ihr Username wird zusammen mit dem Feedback veröffentlicht.</small>
+        </div>
+        <br>
+        <div class="form-group">
+            
+            <span class="sternebewertung"> 
+                <input type="radio" id="stern5" name="bewertung" value="5"><label for="stern5" title="5 Sterne">5 Sterne</label> 
+                <input type="radio"  id="stern4" name="bewertung" value="4"><label for="stern4" title="4 Sterne">4 Sterne</label> 
+                <input type="radio"  id="stern3" name="bewertung" value="3"><label for="stern3" title="3 Sterne">3 Sterne</label> 
+                <input type="radio"  id="stern2" name="bewertung" value="2"><label for="stern2" title="2 Sterne">2 Sterne</label> 
+                <input type="radio"  id="stern1" name="bewertung" value="1"><label for="stern1" title="1 Stern">1 Stern</label> 
+                <span id="Bewertung"><label><input type="radio" name="bewertung" value="0" checked="checked" style="display:none"> Bewertung:</label></span> 
+            </span> 
+                
+        </div>
+        <br><br>
+        <div class="form-group">
+                <label for="Comment">Comment</label>
+                <textarea class="form-control" id="exampleFormControlTextarea" rows="3"></textarea>
+                </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="accept" >
+            <label class="form-check-label" for="Terms&Conditions"> Accept Terms & Conditions</label>
+        </div>
+        <button class="btn btn-outline-danger"  onclick="buttonclickHandler()" id ="ButtonHinzufuegen">Submit</button>
+        <!--<button type="submit" class="btn btn-outline-danger">Submit</button>-->
+        
+        <br><br><br>
+
+        <h3>Feedback from Users:</h3>
+        <br>
+        <table id="mytable">
+            <tr >
+                <td id="first" ></td>
+                <td id="second"></td>
+                <td id="third"></td>
+            </tr>
+        </table>
+        <script>
+        function buttonclickHandler() {
+    
+    var username = document.getElementById("InputUsername").value;
+    var text = document.getElementById("exampleFormControlTextarea").value;
+   
+    if (document.getElementById("stern5").checked == true){
+        var sterne = "5 ☆"
+    }
+    if (document.getElementById("stern4").checked == true){
+        var sterne = "4 ☆"
+    }
+    if (document.getElementById("stern3").checked == true){
+        var sterne = "3 ☆"
+    }
+    if (document.getElementById("stern2").checked == true){
+        var sterne = "2 ☆"
+    }
+    if (document.getElementById("stern1").checked == true){
+        var sterne = "1 ☆"
+    }
+    
+
+    var table = document.getElementById("mytable");
+    var row = table.insertRow(0);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    var cell3 = row.insertCell(2);
+    cell1.append(username);
+    cell2.append(text);
+    cell3.append(sterne)
+    
+  }
+  </script>
+
+    </div>
+    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+
+    
+   
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
