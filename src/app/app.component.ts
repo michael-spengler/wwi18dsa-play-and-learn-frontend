@@ -29,7 +29,7 @@ export class AppComponent {
     return {
       // replace the following by your data...
       logoURL: 'https://www.thesun.co.uk/wp-content/uploads/2017/05/nintchdbpict0003267145421.jpg',
-      appTitle: 'Miriams tolle Website',
+      appTitle: 'Unsere tolle Website',
       menuEntries: [{
         isActive: true,
         text: 'Startseite',
@@ -42,12 +42,13 @@ export class AppComponent {
       },
       {
         isActive: false,
-        text: 'Video',
-        href: '/video',
-      },      {
-        isActive: false,
         text: 'Surprise',
         href: '/button',
+      },
+      {
+        isActive: false,
+        text: 'Snake',
+        href: '/snake',
       },
       {
         isActive: false,

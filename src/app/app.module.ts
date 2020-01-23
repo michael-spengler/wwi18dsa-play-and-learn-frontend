@@ -9,8 +9,8 @@ import { DisclaimerModule } from 'german-legal-disclaimer';
 import { NgQAndAModule } from 'ng-q-and-a';
 import { QAndAComponent } from './q-and-a/q-and-a.component';
 import { GelaberComponent } from './gelaber/gelaber.component';
-import { VideoComponent } from './video/video.component';
 import { ButtonComponent } from './button/button.component';
+import { SnakeComponent } from './snake/snake.component';
 
 
 @NgModule({
@@ -19,8 +19,8 @@ import { ButtonComponent } from './button/button.component';
     ContactComponent,
     QAndAComponent,
     GelaberComponent,
-    VideoComponent,
     ButtonComponent,
+    SnakeComponent,
   ],
   imports: [
     DpsModule,
