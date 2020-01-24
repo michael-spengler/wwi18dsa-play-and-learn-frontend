@@ -2,12 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>PlayAndLearnFrontend-TEST</title>
+  <title>Die digitale Einkaufsliste</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body style="margin: 0; padding-bottom: 100px">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
   <app-root></app-root>
+  <div class="header">
+    <h1>Die Digitale Einkaufsliste</h1>  
+  </div>
+  <ul class="topnav">
+    <li><a class="active" href="/src/index.html">Einkaufsliste</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="/src/contact.html">Kontakt</a></li>
+    <li class="right"><a href="">Impressum</a></li>
+  </ul>
+  <script>
+    var app = angular.module("myShoppingList", []); 
+    app.controller("myCtrl", function($scope) {
+        $scope.products = ["6 Karton Milch", "5 Käse -Emmentaler und Tilsiter-", "4 Salatgurken"];
+        $scope.addItem = function () {
+            $scope.errortext = "";
+            if (!$scope.addMe) {return;}
+            if ($scope.products.indexOf($scope.addMe) == -1) {
+                $scope.products.push($scope.addMe);
+            } else {
+                $scope.errortext = "Der Artikel befindet sich bereits in Ihrer Einkaufsliste. Entfernen Sie erst diesen Artikel, um diesen bearbeitet einzufügen.";
+            }
+        }
+        $scope.removeItem = function (x) {
+            $scope.errortext = "";    
+            $scope.products.splice(x, 1);
+        }
+    });
+    </script>
+
+    <div class="row">
+      <div class="column side">
+        <h2>Digitale Einkaufsliste</h2>
+        <h3>Tool erleichtert den Einkauf</h3>
+        <p>Vor dem Einkauf erfolgt der Rundgang durch die Wohnung und alles Nötige wird notiert. Doch in der Eile bleibt der Einkaufszettel auf dem Küchentisch liegen. Dies wäre mit diesem neuen Tool, die das Erstellen einer digitalen Einkaufsliste ermöglicht, nicht passiert.</p>
+      </div>
+      
+      <div class="column middle">
+        <div ng-app="myShoppingList" ng-cloak ng-controller="myCtrl" class="w3-card-2 w3-margin" style="max-width: auto;">
+          <header class="w3-container w3-light-grey w3-padding-16">
+            <h3>Ihre Einkaufsliste</h3>
+          </header>
+          <ul class="w3-ul">
+            <li ng-repeat="x in products" class="w3-padding-16">{{x}}<span ng-click="removeItem($index)" style="cursor:pointer;" class="w3-right w3-margin-right">X</span></li>
+          </ul>
+          <div class="w3-container w3-light-grey w3-padding-16">
+            <div class="w3-row w3-margin-top">
+              <div class="w3-col s10">
+                <input placeholder="Füge eine Sache der Einkaufsliste hinzu..." ng-model="addMe" class="w3-input w3-border w3-padding">
+              </div>
+              <div class="w3-col s2">
+                <button ng-click="addItem()" class="w3-btn w3-padding w3-green">Add!</button>
+              </div>
+            </div>
+            <p class="w3-text-red">{{errortext}}</p>
+          </div>
+        </div>  
+      </div>
+      
+      <div class="column side">
+        <h2>Herausgeber</h2>
+        <p>
+          Tobias Bethge<br>
+          WWI18DSA<br>
+          Matrikel-Nr.: 8971659
+        </p>
+      </div>
+    </div>
 </body>
 </html>
