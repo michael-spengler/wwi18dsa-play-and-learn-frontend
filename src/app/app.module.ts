@@ -9,6 +9,10 @@ import { DisclaimerModule } from 'german-legal-disclaimer';
 import { NgQAndAModule } from 'ng-q-and-a';
 import { QAndAComponent } from './q-and-a/q-and-a.component';
 import { NickComponent } from './nick/nick.component';
+import { Nick2Component } from './nick2/nick2.component';
+
+
+
 
 
 @NgModule({
@@ -16,7 +20,8 @@ import { NickComponent } from './nick/nick.component';
     AppComponent,
     ContactComponent,
     QAndAComponent,
-    NickComponent
+    NickComponent,
+    Nick2Component,
   ],
   imports: [
     DpsModule,
@@ -24,7 +29,8 @@ import { NickComponent } from './nick/nick.component';
     ImpressumModule,
     DisclaimerModule,
     NavbarModule,
-    BrowserModule
+    BrowserModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

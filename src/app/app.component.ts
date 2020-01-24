@@ -41,8 +41,13 @@ export class AppComponent {
       },
       {
         isActive: false,
-        text: 'Nick',
+        text: 'Dashboard',
         href: '/nick',
+      },
+      {
+        isActive: false,
+        text: 'Join us',
+        href: '/nick2',
       },
       {
         isActive: false,
