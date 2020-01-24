@@ -1,10 +1,58 @@
+<!-- HEADER BEGIN-->
 <lib-navbar [navBarData]="navBarData" (clickMenuEntry)="onClickMenuEntry($event)"></lib-navbar>
 
-<div class="meinAbschnitt">
-  <app-q-and-a *ngIf="view==='/landing'"></app-q-and-a>
-  <app-contact *ngIf="view==='/contact'"></app-contact>
+<p class="Back">
+  <!--
+  <a href="/landing">Back</a>-->
+</p >
 
-  <button (click)="onClickMe()">
-    Quiz Generieren
-  </button>
+<!-- HEADER END-->
+
+<div class="meinAbschnitt">
+  <!--<app-q-and-a *ngIf="view==='/landing'"></app-q-and-a>-->
+  <app-feedback *ngIf="view==='/feedback'"></app-feedback> 
+  <app-aktuell *ngIf="view==='/aktuell'"></app-aktuell>
+  <app-contact *ngIf="view==='/contact'"></app-contact>
+  <app-tier-quiz *ngIf="view==='/tierquiz'"></app-tier-quiz>
+
 </div>
+
+<div class="meinLanding" *ngIf="view==='/landing'">
+ <span class = "Überschrift"> Herzlich willkommen auf unserer Website!</span><br>
+ <span class = "Text">Unter Aktuell sehen Sie das neuste Wetter.<br>
+  Bei einem Tier Quiz können Sie ihr Wissen testen<br>
+  und unter Feedback freuen wir uns über eine Rückmeldung von Ihnen!</span><br>
+  <p></p>
+  <br />
+  <span class="Bild"><img src="https://img1.gbpicsonline.com/gb/64a/169b.jpg" alt="Selfhtml" ></span>
+  <br />
+  
+
+
+</div>
+<br />
+
+
+<!-- FOOTER BEGIN -->
+<div class="Footer">
+
+  <table class="Buttontable">
+    <tr>
+      <td>
+        <button (click)="onClickBack()" class="basic-button">Back</button>
+      </td>
+      <td>
+        <button (click)="onClickSendFeedback()" class="basic-button"> Feedback</button>
+      </td>
+      <td>
+        <button (click)="onClickImpressum()" class="basic-button"> Impressum</button>
+      </td>
+    </tr>
+  </table>
+  
+  </div>
+
+
+
+
+<!-- FOOTER END -->
