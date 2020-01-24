@@ -1,6 +1,51 @@
-<div>
+<div class="quiz">
   <lib-ng-q-and-a [persistencyURLForGetRequest]="persistencyURLForGetRequest"
                   [persistencyURLForAddRequest]="persistencyURLForAddRequest"
                   [persistencyURLForUpdateRequest]="persistencyURLForUpdateRequest">
   </lib-ng-q-and-a>
 </div>
+
+<div class="logo">
+<h1>
+  <span>W</span>
+  <span>W</span>
+  <span>I</span>
+  <span>1</span>
+  <span>8</span>
+  <span>D</span>
+  <span>S</span>
+  <span>A</span>
+</h1>
+</div>
+
+<div class="timer">
+<p>
+  Test Yourself: Solve as many Question in 30 Seconds
+</p>
+
+<button class="myButt two" (click)='startTimer()'>Start Timer</button>
+<button class="myButt two" (click)='pauseTimer()'>Pause</button>
+<button class="myButt two" (click)='alert()'>Alert</button>
+<p>{{timeLeft}} Seconds Left for solving....</p> 
+</div>
+  <footer>
+    <div class="f-svg">
+      <img src="https://secureservercdn.net/160.153.138.177/t0w.232.myftpupload.com/wp-content/uploads/2019/10/favicon.png?time=1576571035" class='image'>
+    </div>  
+    <div class="footer-container">
+      <h4>König Knossi:</h4>
+      <hr style="width:75%">
+      <div><a href="https://www.youtube.com/watch?v=0dFgaoR9418" target="_blank"><button class='myButt one'>
+        <div class='insider'></div>
+        Wir gehen rein!
+      </button></a><a href="https://www.youtube.com/watch?v=trmWhm79eP0" target="_blank"><button class='myButt one'>
+        <div class='insider'></div>
+        Wir bleiben drin!
+      </button></a><a href="https://www.youtube.com/watch?v=PQ_kz-YrmA4&t=17s" target="_blank"><button class='myButt one'>
+        <div class='insider'></div>
+        Wir gehen raus!
+      </button></a></div>
+    </div>
+  </footer>
+
+

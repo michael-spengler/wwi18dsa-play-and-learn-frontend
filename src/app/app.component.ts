@@ -34,11 +34,7 @@ export class AppComponent {
         text: 'Home',
         href: '/landing',
       },
-      {
-        isActive: false,
-        text: 'Menu Entry 2',
-        href: '/menuEntry2',
-      },
+      
       {
         isActive: false,
         text: 'Contact',

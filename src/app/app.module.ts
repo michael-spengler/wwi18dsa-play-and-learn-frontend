@@ -8,6 +8,8 @@ import { NavbarModule } from 'ng-responsive-navbar';
 import { DisclaimerModule } from 'german-legal-disclaimer';
 import { NgQAndAModule } from 'ng-q-and-a';
 import { QAndAComponent } from './q-and-a/q-and-a.component';
+import { Darkmode } from 'darkmode-js';
+ 
 
 
 @NgModule({

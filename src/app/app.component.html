@@ -1,5 +1,6 @@
 <lib-navbar [navBarData]="navBarData" (clickMenuEntry)="onClickMenuEntry($event)"></lib-navbar>
 
-<app-q-and-a *ngIf="view==='/landing'"></app-q-and-a>
+<app-q-and-a class="quiz" *ngIf="view==='/landing'"></app-q-and-a>
 
 <app-contact *ngIf="view==='/contact'"></app-contact>
+

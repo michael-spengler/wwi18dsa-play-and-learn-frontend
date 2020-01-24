@@ -1,3 +1,230 @@
-div {
+.quiz {
   margin-top: 100px;
 }
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+/* BODY */
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: skyblue;
+  background-image: -webkit-linear-gradient(90deg, skyblue 0%, steelblue 100%);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  overflow: hidden;
+  font-family: "Luckiest Guy", cursive;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: transparent;
+}
+.logo {
+  margin-top: 10%;
+}
+.timer{
+  text-align: center
+}
+/* JUMP */
+h1 {
+  cursor: default;
+  position: sticky;
+  left: 0%;
+  right: 0;
+  width: 100%;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+h1 span {
+  position: relative;
+  top: 20px;
+  display: inline-block;
+  -webkit-animation: bounce 0.3s ease infinite alternate;
+  font-size: 200%;
+  color: #cfcfcf;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+    0 5px 0 #ccc, 0 6px 0 transparent, 0 7px 0 transparent, 0 8px 0 transparent,
+    0 9px 0 transparent, 0 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+h1 span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+}
+
+h1 span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+}
+
+h1 span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+}
+
+h1 span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+}
+
+h1 span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+}
+
+h1 span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+}
+
+h1 span:nth-child(8) {
+  -webkit-animation-delay: 0.2s;
+}
+
+h1 span:nth-child(9) {
+  -webkit-animation-delay: 0.3s;
+}
+
+h1 span:nth-child(10) {
+  -webkit-animation-delay: 0.4s;
+}
+
+/* ANIMATION */
+@-webkit-keyframes bounce {
+  100% {
+    top: -20px;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc, 0 3px 0 #ccc, 0 4px 0 #ccc,
+      0 5px 0 #ccc, 0 6px 0 #ccc, 0 7px 0 #ccc, 0 8px 0 #ccc, 0 9px 0 #ccc,
+      0 50px 25px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.my-svg {
+  display: block;
+  width: 20%;
+  height: 50%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.image {
+  height:250%;
+}
+footer h4 {
+  font-family: 'coda';
+  font-size:1.5em;
+  color:#fff;
+  text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+footer h4 span{
+  font-family: "bitter", san-serif;
+}
+
+/***************************
+****************************
+footer animation
+****************************
+***************************/
+
+.footer-container {
+  position:relative;
+  padding:15px 0;
+  bottom: -150px;
+  background-color: #e3e3e3;
+  transition: all .5s ease-in-out;
+}
+
+footer:hover .footer-container {
+  bottom:0px;
+}
+
+.f-svg {
+  display: block;
+  width: 50px;
+  height: 20%;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+
+/***************************
+****************************
+Main SVG CSS
+****************************
+***************************/
+
+
+
+      .myButt {
+        margin: auto;
+        cursor: crosshair;
+        font-size: 20px;
+        background-color: transparent;
+        position: relative;
+        border: 2px solid #fff;
+        transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+     }
+      .one {
+        border-color: #fff;
+        overflow: hidden;
+        color: #fff;
+        margin:3px;
+     }
+      .one .insider {
+        background-color: #fff;
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        left: -135px;
+        transform: rotateZ(45deg);
+        -webkit-transform: rotateZ(45deg);
+        -moz-transform: rotateZ(45deg);
+        -o-transform: rotateZ(45deg);
+        -ms-transform: rotateZ(45deg);
+     }
+      .one:hover {
+        background-color: #f44336;
+        border-color: #fff;
+        color: #fff;
+     }
+      .one:hover .insider {
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition:all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        left: 135px;
+     }
+
+     .two {
+      border-color: rgb(179, 179, 179);
+      overflow: hidden;
+      color: rgb(87, 196, 196);
+      margin:3px;
+   }
+    .two:hover {
+      background-color: #5DBCD2;
+      border-color : rgb(179, 179, 179);
+      color: #000;
+   }
