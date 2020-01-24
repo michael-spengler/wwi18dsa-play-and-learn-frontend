@@ -1,0 +1,107 @@
+
+
+.Abschnitt2 {
+    margin-top: 100px;
+    text-align: center;
+   font-family: "Verdana";
+   text-decoration: underline;
+   font-weight: bold;
+   font-size: 50px;
+  }
+
+.Frage {
+    margin-top: 100px;
+    text-align: center;
+   font-family: "Verdana";
+   font-size: 30px;
+  }
+
+
+.erste {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+.zweite {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+body{
+  font: normal 1em/1.5 'Roboto';
+  background-color: #3a3d4a;
+  color: #fff;
+}
+strong{
+  color: #FC6A03;
+}
+.transition{
+  transition: all .3s ease-out;
+}
+.heading{
+  text-align: center;
+  font-size:0.8em;
+  
+}
+.center-align{
+  width: 600px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  display: table;
+  margin-top: 200px;
+  margin-left: -200px;
+}
+
+.center-align2{
+    width: 600px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: table;
+    margin-top: 660px;
+    margin-left: -100px;
+  }
+
+input[type="radio"]{
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+.w-check {
+  outline: red 1px solid;
+}
+
+label {
+  text-align: center;
+  cursor: pointer;
+  background-color: #454545;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: 0.250s all ease-out;
+}
+input[type="radio"]:checked + label{
+  background-color: #FC6A03;
+}
+
+input[type="radio"]:checked + label > i{
+  width: auto;
+}
+
+i {
+  width: 0;
+  margin-right: 4px;
+}
+
+.Button {
+    text-align: center;  
+}

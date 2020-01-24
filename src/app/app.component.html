@@ -1,5 +1,15 @@
 <lib-navbar [navBarData]="navBarData" (clickMenuEntry)="onClickMenuEntry($event)"></lib-navbar>
 
-<app-q-and-a *ngIf="view==='/landing'"></app-q-and-a>
+<!--<app-q-and-a *ngIf="view==='/landing'"></app-q-and-a>-->
 
-<app-contact *ngIf="view==='/contact'"></app-contact>
+<div><app-test *ngIf="view==='/test'"></app-test>
+
+<app-contact *ngIf="view==='/contact'"></app-contact></div>
+
+<div class="Abschnitt1" *ngIf="view==='/landing'">
+Mach dir einen Straßenbahntest!
+<head>
+    <img src="/assets/rnv.png" alt="Simply Easy Learning">
+</head>
+<button (click)="onClickTest()" class="Test">Los geht's!</button>  
+</div>

@@ -1,0 +1,26 @@
+.Abschnitt1 {
+    margin-top: 100px;
+    text-align: center;
+   font-family: "Verdana";
+   text-decoration: underline;
+   font-weight: bold;
+   font-size: 50px;
+  }
+
+head {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  button {
+    background-color: #FC6A03; /* Orange */
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin-left: 0px;
+  }

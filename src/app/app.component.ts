@@ -31,13 +31,13 @@ export class AppComponent {
       appTitle: 'Play And Learn',
       menuEntries: [{
         isActive: true,
-        text: 'Home',
+        text: 'Willkommen',
         href: '/landing',
       },
       {
         isActive: false,
-        text: 'Menu Entry 2',
-        href: '/menuEntry2',
+        text: 'Straßenbahntest',
+        href: '/test',
       },
       {
         isActive: false,
@@ -46,4 +46,26 @@ export class AppComponent {
       }]
     };
   }
+  
+  public onClickTest() {
+      this.view = '/test';
+      this.navBarData.menuEntries= [{
+        isActive: false,
+        text: 'Willkommen',
+        href: '/landing',
+      },
+      {
+        isActive: true,
+        text: 'Straßenbahntest',
+        href: '/test',
+      },
+      {
+        isActive: false,
+        text: 'Contact',
+        href: '/contact',
+      }
+    ];
+      href:'/test';
+  };
+  
 }
