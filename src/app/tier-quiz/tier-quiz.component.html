@@ -1,0 +1,97 @@
+<div id='1'>
+    <h1 class="Überschrift">Willkommen beim Tier Quiz!</h1>
+    <p class = "Text">Du willst mehr über deine Lieblingstiere lernen? Oder du willst dein Wissen testen?<br>
+        Dann bist du hier genau richtig! Teste dein Wissen und aktiviere die richtige Checkbox.
+    </p>
+    <label>Wähle zunächst das Futter:
+        <select id='Futter' (click)=build()>
+            <option></option>
+            <option>Fisch</option>
+            <option>Blätter</option>
+            <option>Samen</option>
+            <option>Robbe</option>
+            <option>Krebse</option>
+            <option>Antilope</option>
+            <option>Vögel</option>
+            <option>Gräser</option>
+            <option>Insekten</option>
+        </select>
+    </label><br>
+    <p>Wähle nun alle Tiere, die sich von dem von der gewählten Futter ernähren:</p>
+    <div class='animal'>
+        <input type='checkbox' id='Pinguin'>
+        <label for='Pinguin' class='animal'>Pinguin</label><br>
+        <img src='../assets/penguin-2204566_1920.jpg'>
+    </div><br>
+    <div class='animal'>
+        <input type='checkbox' id='Flamingo'>
+        <label for='Flamingo' class='animal'>Flamingo</label><br>
+        <img src='../assets/flamingo-635700_1920.jpg'>
+    </div><br>
+    <div class='animal'>
+        <input type='checkbox' id='Nashorn'>
+        <label for='Nashorn' class='animal'>Nashorn</label><br>
+        <img src='../assets/rhino-4465476_1920.jpg'>
+    </div><br>
+    <div class='animal'>
+        <input type='checkbox' id='Eisbär'>
+        <label for='Eisbär' class='animal'>Eisbär</label><br>
+        <img src='../assets/polar-bear-404317_1920.jpg'>
+    </div><br>
+    <div class='animal'>
+        <input type='checkbox' id='Löwe'>
+        <label for='Löwe' class='animal'>Löwe</label><br>
+        <img src='../assets/lion-1840092_1280.jpg'>
+    </div><br>
+    <div class='animal'>
+        <input type='checkbox' id='Otter'>
+        <label for='Otter' class='animal'>Otter</label><br>
+        <img src='../assets/otter-1438381_1920.jpg'>
+    </div><br>
+    <div class='animal'>
+        <input type='checkbox' id='Robbe'>
+        <label for='Robbe' class='animal'>Robbe</label><br>
+        <img src='../assets/seal-18440_1920.jpg'>
+    </div><br>
+    <div class='animal'>
+        <input type='checkbox' id='Tiger'>
+        <label for='Tiger' class='animal'>Tiger</label><br>
+        <img src='../assets/tiger-4697690_1920.jpg'>
+    </div><br>
+    <div class='animal'>
+        <input type='checkbox' id='Elefant'>
+        <label for='Elefant' class='animal'>Elefant</label><br>
+        <img src='../assets/elephant-114543_1920.jpg'>
+    </div><br>
+    <div class='animal'>
+        <input type='checkbox' id='Erdmännchen'>
+        <label for='Erdmännchen' class='animal'>Erdmännchen</label><br>
+        <img src='../assets/suricate-2100135_1920.jpg'>
+    </div><br>
+    <div class='animal'>
+        <input type='checkbox' id='Giraffe'>
+        <label for='Giraffe' class='animal'>Giraffe</label><br>
+        <img src='../assets/giraffe-171318_1920.jpg'>
+    </div><br>
+    <div class='animal'>
+        <input type='checkbox' id='Nilpferd'>
+        <label for='Nilpferd' class='animal'>Nilpferd</label><br>
+        <img src='../assets/hippopotamus-2641871_1920.jpg'>
+    </div><br>
+    <div class='animal'>
+        <input type='checkbox' id='Zebra'>
+        <label for='Zebra' class='animal'>Zebra</label><br>
+        <img src='../assets/hartmanns-3927185_1920.jpg'>
+    </div><br>
+    <div class='animal'>
+        <input type='checkbox' id='Affe'>
+        <label for='Affe' class='animal'>Affe</label><br>
+        <img src='../assets/chimpanzee-3703230_1920.jpg'>
+    </div><br>
+    <div class='animal'>
+        <input type='checkbox' id='Kamel'>
+        <label for='Kamel' class='animal'>Kamel</label><br>
+        <img src='../assets/camel-1120371_1280.jpg'>
+    </div><br>
+    <button (click)=speichern() class="basic-button">Überprüfen</button>
+</div>

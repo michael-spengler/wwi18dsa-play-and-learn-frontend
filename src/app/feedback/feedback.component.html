@@ -1,1 +1,31 @@
-Test
+<div>
+    <p class="Text">Geben Sie uns Feedback zu unserer Website. Wir freuen uns immer über neue Anregungen.</p>
+</div>
+<div class="tabelle" id='2'>
+    
+<table>
+    <tr>
+        <td>Vorname:</td>
+        <td class="vorname"><input type="text" id="vorname" name="firstname"alt="Vorname" size="40" max="250"></td>
+    </tr>
+
+    <tr>
+        <td>Nachname:</td>
+        <td><input type="text" name="lastname" id='lastname' alt="Nachname" size="40" max="250"></td>
+    </tr>
+
+    <tr>
+        <td>E-Mail:</td>
+        <td><input type="text" name="mail" id='mail' alt="E-Mail" size="40" max="250"></td>
+    </tr>
+
+    <tr>
+        <td>Text:</td>
+        <td><textarea id='text' row="10" cols="40" name="text"></textarea></td>
+    </tr>
+
+</table>
+<button (click)="onClickFeedbackEntry()">
+    Abschicken
+</button>
+</div>
