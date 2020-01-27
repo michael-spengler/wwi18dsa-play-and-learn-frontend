@@ -1,11 +1,4 @@
 <div>
-    <p>unterseite works!</p>
-    <br>
-    <h1>Testtesttesttest</h1>
-    <button type="button">Click Me!</button>
-    <p>addition(2,4)</p>
-
-
   <div class="container">
     <h2>Rechner</h2>
     <div id="accordion">
@@ -19,11 +12,11 @@
           <div class="card-body">
             <form>
               <label for="z1"> </label>
-              <input type="number" id="z1" placeholder="Zahl1">
+              <input type="number" id="z1" placeholder="Zahl1" #z1a>
               <label for="z2">  addiert mit   </label>
-              <input type="number" id="z2" placeholder="Zahl2">
+              <input type="number" id="z2" placeholder="Zahl2" #z2a>
               <br>
-              <button type="submit" class="btn"> Berechnen</button>
+              <button type="button" class="btn" (click)="addition(z1a,z2a)"> Berechnen</button>
             </form>
           </div>
         </div>
@@ -38,12 +31,12 @@
           <div class="card-body">
             <form>
               <label for="z1">Zahl 1 eingeben: </label>
-              <input type="number" id="z1" placeholder="Zahl1">
+              <input type="number" id="z1" placeholder="Zahl1" #z1s>
               <br>
               <label for="z2">Zahl 2 eingeben: </label>
-              <input type="number" id="z2" placeholder="Zahl2">
+              <input type="number" id="z2" placeholder="Zahl2" #z2s>
               <br>
-              <button type="submit" class="btn"> Berechnen</button>
+              <button type="button" class="btn" (click)="subtraction(z1s,z2s)"> Berechnen</button>
             </form>
           </div>
         </div>
@@ -58,12 +51,12 @@
           <div class="card-body">
             <form>
               <label for="z1">Zahl 1 eingeben: </label>
-              <input type="number" id="z1" placeholder="Zahl1">
+              <input type="number" id="z1" placeholder="Zahl1" #z1m>
               <br>
               <label for="z2">Zahl 2 eingeben: </label>
-              <input type="number" id="z2" placeholder="Zahl2">
+              <input type="number" id="z2" placeholder="Zahl2" #z2m>
               <br>
-              <button type="submit" class="btn"> Berechnen</button>
+              <button type="button" class="btn" (click)="multiplication(z1m,z2m)"> Berechnen</button>
             </form>
           </div>
         </div>
@@ -77,12 +70,12 @@
           <div class="card-body">
             <form>
               <label for="z1">Zahl 1 eingeben: </label>
-              <input type="number" id="z1" placeholder="Zahl1">
+              <input type="number" id="z1" placeholder="Zahl1" #z1d>
               <br>
               <label for="z2">Zahl 2 eingeben: </label>
-              <input type="number" id="z2" placeholder="Zahl2">
+              <input type="number" id="z2" placeholder="Zahl2" #z2d>
               <br>
-              <button type="submit" class="btn"> Berechnen</button>
+              <button type="button" class="btn" (click)="division(z1d,z2d)"> Berechnen</button>
             </form>
           </div>
         </div>

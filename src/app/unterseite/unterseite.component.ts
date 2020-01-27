@@ -8,20 +8,23 @@ import { Component, OnInit } from '@angular/core';
 export class UnterseiteComponent implements OnInit {
 
   constructor() { }
-
+  addition(a,b){
+    alert('Das Ergebnis ist: ');
+    alert(Number(a.value)+Number(b.value));
+  }
+  subtraction(a,b){
+    alert('Das Ergebnis ist: ');
+    alert(Number(a.value)-Number(b.value));
+  }
+  multiplication(a,b){
+    alert('Das Ergebnis ist: ');
+    alert(Number(a.value)*Number(b.value));
+  }
+  division(a,b){
+    alert('Das Ergebnis ist: ');
+    alert(Number(a.value)/Number(b.value));
+  }
   ngOnInit() {
   }
 
-}
-function addition(a:number, b:number):number {
-  return a+b;
-}
-function subtraction(a:number, b:number):number {
-  return a-b;
-}
-function multiplication(a:number,b:number):number {
-  return a*b;
-}
-function division(a:number, b:number):number {
-  return a/b
 }
