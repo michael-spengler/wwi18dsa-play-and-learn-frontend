@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.container{
+    background-color: aqua;
+}
+.btn{
+    outline: rgb(60, 7, 112);
+    background-color: mediumpurple;
+    border-radius: 12px;
+}
