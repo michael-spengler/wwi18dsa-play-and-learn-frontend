@@ -6,23 +6,34 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./unterseite.component.css']
 })
 export class UnterseiteComponent implements OnInit {
-
+  c_s:number;
+  c_a:number;
+  c_m:number;
+  c_d:number;
   constructor() { }
   addition(a,b){
-    alert('Das Ergebnis ist: ');
-    alert(Number(a.value)+Number(b.value));
+    var c_a =Number(a.value)+Number(b.value);
+    // alert('Das Ergebnis ist: ');
+    // alert(c_a);
+    this.c_a=c_a;
   }
   subtraction(a,b){
-    alert('Das Ergebnis ist: ');
-    alert(Number(a.value)-Number(b.value));
+    var c_s=Number(a.value)-Number(b.value);
+    // alert('Das Ergebnis ist: ');
+    // alert(c_s);
+    this.c_s=c_s;
   }
   multiplication(a,b){
-    alert('Das Ergebnis ist: ');
-    alert(Number(a.value)*Number(b.value));
+    var c_m=Number(a.value)*Number(b.value);
+    // alert('Das Ergebnis ist: ');
+    // alert(c_m);
+    this.c_m=c_m;
   }
   division(a,b){
-    alert('Das Ergebnis ist: ');
-    alert(Number(a.value)/Number(b.value));
+    var c_d=Number(a.value)/Number(b.value);
+    // alert('Das Ergebnis ist: ');
+    // alert(c_d);
+    this.c_d=c_d;
   }
   ngOnInit() {
   }
