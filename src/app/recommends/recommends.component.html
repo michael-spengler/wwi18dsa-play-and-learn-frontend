@@ -1,0 +1,151 @@
+<head>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  <!-- Dropdown Menu -->
+<div class="platzhalter">
+ <div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <div class="dropdown">
+        <button class="dropbtn">Category</button>
+        <div class="dropdown-content">
+          <a (click) ="Toggle(1)">Comedy</a>
+          <a (click) ="Toggle(3)">Essays</a>
+          <a (click) ="Toggle(2)">Music</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Essays -->
+
+    <div class="row top">
+      <div class="col-sm-4">
+        <div class="card " [hidden] = "hideContent3">
+        	<img src="https://yt3.ggpht.com/a/AGF-l7-IjJYnMgeic4KFsOaP66V29hIX3ywDkCikRw=s1000-c-k-c0x00ffffff-no-rj-mo" class="card-img-top" alt="Card image" />
+            <div class="card-block">
+        			<h4 class="card-title">HBomberguy</h4>
+        			<p class="card-text">Mit ausgefuchsten Videoessays über Polarisierende Themen wie Politik und Medien aller Art weiß der eigenbrötlerische Brite für Stunden zu unterhalten. Immer einen Blick wert, trotz unregelmäßigen uploads.</p>
+                <div class="card-footer text-center">
+                  <a href="https://www.youtube.com/user/hbomberguy" class="btn btn-success ">Zum Kanal</a>
+                </div> 
+              </div>
+            </div>
+          </div>
+      <div class="col-sm-4">
+        <div class="card" [hidden] = "hideContent3" >
+        	<img src="https://yt3.ggpht.com/a/AGF-l79pXyEPxGaDNwRZdvArrCEbDWzI6CjN5ImdWA=s1000-c-k-c0x00ffffff-no-rj-mo" class="card-img-top" alt="Card image" />
+            <div class="card-block">
+        			<h4 class="card-title">Captain Disillusion</h4>
+        			<p class="card-text">Durch seine jahrelange erfahrung mit Filmproduktion, hat Captain Disillusion eine unvergleichliche Expertise aufgebaut, mit der er Virale Videos zu bloszustellen weiß. Vorallem interessant für schnitt- CGI interessierte.</p>
+                <div class="card-footer text-center">
+                  <a href="https://www.youtube.com/user/CaptainDisillusion" class="btn btn-success ">Zum Kanal</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-sm-4" >
+          <div class="card" [hidden] = "hideContent3" >
+        		<img src="https://yt3.ggpht.com/a/AGF-l7_M-HwWejBHSOVLNZ5pDqr6-g79DHR2Mj5Y1A=s1000-c-k-c0x00ffffff-no-rj-mo"class="card-img-top" alt="Card image" />
+            <div class="card-block">
+        			<h4 class="card-title">BeHaind</h4>
+        			<p class="card-text">Als Ex-GIGA Redaktuer befindet sich David Hain am zahn der Zeit der Unterhaltungsbranche. Mit aufwändigen und thematisch interessanten Video Essays weiß er sein Wissen auf sympathische Art und Weise zu teilen!</p>
+        			<div class="card-footer text-center">
+                <a href="https://www.youtube.com/user/BeHaind" class="btn btn-success ">Zum Kanal</a>
+              </div>
+        		</div>
+        	</div>
+        </div>
+      </div>
+      
+     <!-- Musik -->
+      
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card" [hidden] = "hideContent2">
+            <img src="https://yt3.ggpht.com/a/AGF-l7-R3Tc4G_czapy8OYUHlTgphrotACM6n-Vqxg=s1000-c-k-c0x00ffffff-no-rj-mo" class="card-img-top" alt="Card image" />
+            <div class="card-block">
+            <h4 class="card-title">Andrew Huang</h4>
+            <p class="card-text">Für alle Homerecording interessierten Hipster ist Andrew Huang ein absolutes Muss! Wie fast kein zweiter weiß er mit Ableton umzugeh und die Soundscapes in seinem kopf mit alltäglichen Geräuschen zu realisieren.</p>
+              <div class="card-footer text-center">
+                <a href="https://www.youtube.com/user/songstowearpantsto" class="btn btn-success ">Zum Kanal</a>
+              </div> 
+            </div>
+          </div>
+        </div>
+      <div class="col-sm-4">
+        <div class="card" [hidden] = "hideContent2">
+          <img src="https://yt3.ggpht.com/a/AGF-l78EJVOGBaN5ouH2YIO9GW7WBZtnReqd2bYQpA=s1000-c-k-c0x00ffffff-no-rj-mo" class="card-img-top" alt="Card image" />
+            <div class="card-block">
+              <h4 class="card-title">Marti Fischer</h4>
+              <p class="card-text">Marti Fischer wurde ursprünglich durch seine Stimmimitationen bekannt. Er kann jedoch nicht nur Stefan Raabs engelsgleiches organ kopieren, sondern ist auch musikalisch sehr talentiert und stellt dies regelmäßig in Youtube Videos zur Schau</p>
+                <div class="card-footer text-center">
+                  <a href="https://www.youtube.com/user/theclavinover" class="btn btn-success ">Zum Kanal</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-sm-4" >
+          <div class="card" [hidden] = "hideContent2" >
+            <img src="https://yt3.ggpht.com/a/AGF-l78n7SO2IGF-6TDEeBZDbZdTIWa32ySnvco-4A=s1000-c-k-c0x00ffffff-no-rj-mo"class="card-img-top" alt="Card image" />
+              <div class="card-block">
+                <h4 class="card-title">Vincent Lee</h4>
+                <p class="card-text">Als Hausproduzent des Youtube Deutschland Urgesteins Julien Bam war Vincent Lee lange Zeit lediglich für Hintergrundmusik zuständig. Mittlerweile hat er sich eine eigene veritable Karriere auf Basis seines musikalischen skills aufgebaut.</p>
+                  <div class="card-footer text-center">
+                    <a href="https://www.youtube.com/user/vincentleemusic" class="btn btn-success ">Zum Kanal</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    
+        <!-- Comedy -->
+      
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card Comedy" [hidden] = "hideContent1" >
+            <img src="https://yt3.ggpht.com/a/AGF-l783hs1hMF0tZBUhzbIHygi8GgChdM8dqwKHtg=s1000-c-k-c0x00ffffff-no-rj-mo" class="card-img-top" alt="Card image" />
+            <div class="card-block">
+              <h4 class="card-title">Dolan Dark</h4>
+              <p class="card-text">Als einer der bekanntesten Meme Channels im Internet hat Dolan Dark einen nicht von der Hand zu weisenden Einfluss auf die Popkultur. Immer einen Blick wert, wenn eines der unregeläßig erscheinenden Videos erscheint.</p>
+                <div class="card-footer text-center">
+                  <a href="https://www.youtube.com/user/BlackIceShredder" class="btn btn-success ">Zum Kanal</a>
+                </div> 
+              </div>
+            </div>
+          </div>
+        <div class="col-sm-4">
+          <div class="card Comedy" [hidden] = "hideContent1">
+            <img src="https://yt3.ggpht.com/a/AGF-l7_LCSlCOhXL31K4K7KeT09DFxYFZBAFZArGxw=s1000-c-k-c0xffffffff-no-rj-mo" class="card-img-top" alt="Card image" />
+              <div class="card-block">
+                <h4 class="card-title">Jon Tron Show</h4>
+                <p class="card-text">Mit einem unverkennbaren Humor und klassischen amerikanischen Slapstick weiß JonTron jederzeit zu unterhalten. Gepaart mit obskuren Fitnessvideos oder anderen medialen Entgleisungen wird die JonTron Show zu eine Konstante der Comedy</p>
+                  <div class="card-footer text-center Comedy">
+                    <a href="https://www.youtube.com/user/JonTronShow" class="btn btn-success ">Zum Kanal</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      <div class="col-sm-4" >
+        <div class="card Comedy" [hidden] = "hideContent1">
+          <img src="https://yt3.ggpht.com/a/AGF-l7-soEOnd_dlLVdGTWOqaJft4ZsOyeg6sR2qvw=s1000-c-k-c0x00ffffff-no-rj-mo"class="card-img-top" alt="Card image" />
+            <div class="card-block">
+              <h4 class="card-title">Cold Ones</h4>
+              <p class="card-text">Mit aussie Humor, Zerstörungswut und jeder Menge Alkohol spricht dieser Podcast jeden an, der einer gehörigen Portion Chaos und Selbstzerstörung nicht abgeneigt ist. Vor allem im berauschten oder verkaterten Zustand zu empfehlen</p>
+                <div class="card-footer text-center">
+                  <a href="https://www.youtube.com/user/MrMonkRage" class="btn btn-success ">Zum Kanal</a>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+<body>
+           
+

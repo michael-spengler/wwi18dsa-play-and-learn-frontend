@@ -1,0 +1,63 @@
+.content{
+    margin-top: 20%;
+    text-align: center;
+}
+
+::selection {
+    background: transparent;
+  }
+  
+  .my-svg {
+    display: block;
+    width: 20%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
+  
+  footer {
+    display:block;
+    overflow:hidden;
+    width:100%;
+    position: absolute;
+    text-align:center;
+    bottom: 0px;
+    font-family: "bitter", san-serif;
+  }
+  .image {
+    height:250%;
+  }
+  
+  footer h4 span{
+    font-family: "bitter", san-serif;
+  }
+  
+  .footer-container {
+    position:relative;
+    padding:15px 0;
+    bottom:-120px;
+    background-color: #e3e3e3;
+    transition: all .5s ease-in-out;
+  }
+  
+  footer:hover .footer-container {
+    bottom:0px;
+  }
+  
+  .f-svg {
+    display: block;
+    width: 50px;
+    height: 20%;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+  }
+  
+  .small-o {
+    position: relative;
+    font-size:10px;
+    text-decoration: underline;
+    top:-6px;
+    
+  }

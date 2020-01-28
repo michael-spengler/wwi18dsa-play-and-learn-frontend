@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { INavbarData } from 'ng-responsive-navbar';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,6 +15,7 @@ export class AppComponent {
 
   public constructor() {
     this.navBarData = this.getNavBarData();
+
   }
 
   public onClickMenuEntry(target: string) {
@@ -34,15 +36,31 @@ export class AppComponent {
         text: 'Home',
         href: '/landing',
       },
-      {
-        isActive: false,
-        text: 'Menu Entry 2',
-        href: '/menuEntry2',
-      },
+      
       {
         isActive: false,
         text: 'Contact',
         href: '/contact',
+      }
+      ,
+      {
+        isActive: false,
+        text: 'Crypto-Values',
+        href: '/game',
+      }
+      ,
+      
+      {
+        isActive: false,
+        text: 'Unit-Test',
+        href: '/alert-button',
+      }
+      ,
+      
+      {
+        isActive: false,
+        text: 'Recommendations',
+        href: '/recommends',
       }]
     };
   }

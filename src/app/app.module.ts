@@ -8,13 +8,19 @@ import { NavbarModule } from 'ng-responsive-navbar';
 import { DisclaimerModule } from 'german-legal-disclaimer';
 import { NgQAndAModule } from 'ng-q-and-a';
 import { QAndAComponent } from './q-and-a/q-and-a.component';
+import { GameComponent } from './game/game.component';
+import { AlertButtonComponent } from './alert-button/alert-button.component';
+import { RecommendsComponent } from './recommends/recommends.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactComponent,
-    QAndAComponent
+    QAndAComponent,
+    GameComponent,
+    AlertButtonComponent,
+    RecommendsComponent
   ],
   imports: [
     DpsModule,
@@ -22,7 +28,8 @@ import { QAndAComponent } from './q-and-a/q-and-a.component';
     ImpressumModule,
     DisclaimerModule,
     NavbarModule,
-    BrowserModule
+    BrowserModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
