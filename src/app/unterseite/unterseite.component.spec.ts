@@ -22,4 +22,8 @@ describe('UnterseiteComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should return true'), ()=>{
+    expect(component.add(1,2)).toEqual(3);
+  }
 });

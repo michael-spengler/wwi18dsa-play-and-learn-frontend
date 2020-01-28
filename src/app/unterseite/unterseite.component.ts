@@ -35,6 +35,9 @@ export class UnterseiteComponent implements OnInit {
     // alert(c_d);
     this.c_d=c_d;
   }
+  public add(a,b){
+    return a+b;
+  }
   ngOnInit() {
   }
 
