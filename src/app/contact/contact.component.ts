@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IStylingData } from 'german-legal-disclaimer';
 import { IIndividualImpressumData } from 'german-impressum';
+import { Comment } from '@angular/compiler';
 
 @Component({
   selector: 'app-contact',
@@ -9,13 +10,13 @@ import { IIndividualImpressumData } from 'german-impressum';
 })
 export class ContactComponent implements OnInit {
   public individualImpressumData: IIndividualImpressumData = {
-    name: 'Michael Spengler',
-    street: 'Zollhofgarten 8',
+    name: 'Elias Schock',
+    street: 'Schwätzingerstraße 99',
     extension: '',
-    zipCode: '69115',
-    city: 'Heidelberg',
-    phoneNumber: '0049 151 67 83 38 69',
-    eMail: 'michael@spengler.biz',
+    zipCode: '88212',
+    city: 'Ravensburg',
+    phoneNumber: '015251816289',
+    eMail: 'Elias.Schock@gmx.de',
     textAlign: 'center',
     bgColor: 'inherit',
   };
@@ -27,6 +28,7 @@ export class ContactComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }

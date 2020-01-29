@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { INavbarData } from 'ng-responsive-navbar';
+import { INavbarData } from 'ng-responsive-navbar'; 
+
 
 @Component({
   selector: 'app-root',
@@ -21,27 +22,28 @@ export class AppComponent {
       window.location.reload();
     }
 
+    alert(target)
     this.view = target;
   }
 
   private getNavBarData(): INavbarData {
     return {
-      // replace the following by your data...
+      
       logoURL: 'http://wwi18dsa.de/getAsset/logo',
-      appTitle: 'Play And Learn',
+      appTitle: 'Landjugend Krauchenwies',
       menuEntries: [{
         isActive: true,
-        text: 'Home',
+        text: 'Startseite',
         href: '/landing',
       },
       {
         isActive: false,
-        text: 'Menu Entry 2',
-        href: '/menuEntry2',
+        text: 'Mitglieder',
+        href: '/mitglieder ',
       },
       {
         isActive: false,
-        text: 'Contact',
+        text: 'Kontakt',
         href: '/contact',
       }]
     };
