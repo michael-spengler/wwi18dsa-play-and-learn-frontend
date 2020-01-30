@@ -1,0 +1,13 @@
+div {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+.pic {
+  background-size: 90%;
+  
+}
+.pic:hover{
+  background-size:85%;
+}
+

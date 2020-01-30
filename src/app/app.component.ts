@@ -39,7 +39,7 @@ export class AppComponent {
       {
         isActive: false,
         text: 'Mitglieder',
-        href: '/mitglieder ',
+        href: '/mitglieder',
       },
       {
         isActive: false,
