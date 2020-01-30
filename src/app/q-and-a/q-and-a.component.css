@@ -10,6 +10,7 @@
 }
 
 .mySlides {
+  /*display: none; */
   max-height: 1000px;
 }
 
