@@ -1,1 +1,329 @@
 /* You can add global styles to this file, and also import other style files */
+@keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+  }
+  
+  html {
+    text-align: center;
+  }
+  
+
+  .h1{
+  
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  }
+/*
+  .hauptkarussell{
+    position: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    max-width: 37.5rem;
+  }
+
+ 
+*/
+
+  body {
+    position: center;
+    background-color: rgb(8, 128, 158);
+    /*max-width: 37.5rem;*/
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  
+  
+  section.dancer {
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    width:20em;
+    height:40em;
+    padding:0 1em 1em;
+    border: 1px solid rgba(0,0,0,.2);
+    /*background-color: hsla(0, 0%, 85%, 0.932);*/
+    box-shadow:0 0 5px rgba(0,0,0,.2);
+    margin:auto;  
+    top:1em;
+    background-color: hsl(175, 23%, 45%);
+    transition:all 2s;
+  }
+  
+  section.dancing {
+    transform:scale(1.5) rotate(-360deg) skew(5deg, -20deg);
+    padding:0 2em 2em;
+    height:40em;
+  
+  }
+  
+  section a{
+    margin-bottom: auto;
+    
+  }
+
+  section h1 {
+    margin-bottom: 0;
+    line-height: 1;
+  }
+  section p {
+    margin-bottom:auto;
+  }
+  section > button {
+    padding:.5em 1em;
+    align-self: center;
+    font-size: 1em;
+    line-height:1;
+    border-radius:.5em;
+    background: hsla(175, 23%, 45%, 1);
+    color:#fff;
+  }
+
+/*Discokugel startet hier*/
+
+  @-webkit-keyframes rotateDiscoBall {
+    0% {-webkit-transform: rotateX(90deg) rotateZ(0deg) rotate(0deg); }
+    100% {-webkit-transform: rotateX(90deg) rotateZ(360deg) rotate(0deg); }
+}
+
+@keyframes rotateDiscoBall {
+    0% {transform: rotateX(90deg) rotateZ(0deg) rotate(0deg); }
+    100% {transform: rotateX(90deg) rotateZ(360deg) rotate(0deg); }
+}
+
+@-webkit-keyframes rotateDiscoBallMiddle {
+    0% {-webkit-transform: rotateX(90deg) rotateY(0deg) rotate(0deg); }
+    100% {-webkit-transform: rotateX(90deg) rotateY(-360deg) rotate(0deg); }
+}
+
+@keyframes rotateDiscoBallMiddle {
+    0% {transform: rotateX(90deg) rotateY(0deg) rotate(0deg); }
+    100% {transform: rotateX(90deg) rotateY(-360deg) rotate(0deg); }
+}
+
+@-webkit-keyframes reflect {
+    0% {-webkit-filter: brightness(60%);}
+    50% {-webkit-filter: brightness(120%);}  
+    100% {-webkit-filter: brightness(90%);}  
+}
+
+@keyframes reflect {
+    0% {opacity: 1;}
+    50% {opacity: 0.4;}  
+    100% {opacity: 1;}  
+}
+
+#discoBall {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -50px;
+  -webkit-animation: rotateDiscoBall 18s linear infinite;
+  animation: rotateDiscoBall 18s linear infinite;
+}
+
+#discoBallLight {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  margin-left: -50px; 
+  border-radius: 100%;
+  background-color: white; 
+  opacity: 0.2;
+  -webkit-filter: blur(20px);
+  filter: blur(20px);
+}
+
+.square {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;	
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  transform: rotateX(90deg) rotateY(0deg) translateZ(0px);
+}
+
+#discoBallMiddle { 
+  height: 100%;
+  border-radius: 100%;
+  background-color: #111;
+  position: absolute;
+  background: -webkit-linear-gradient(to bottom, #111, #333);
+  background: -moz-linear-gradient(to bottom, #111, #333);
+  background: linear-gradient(to bottom, #111, #333);
+  -webkit-animation: rotateDiscoBallMiddle 18s linear infinite;
+  animation: rotateDiscoBallMiddle 18s linear infinite;
+}
+
+a.dicokugel {
+  position: absolute;
+  bottom: 12px;
+  right: 20px;
+}
+
+section party{
+  position: center;
+}
+
+/*Discokugel endet hier*/
+
+/*Herzschlag-Animation startet hier*/
+@keyframes pulse {
+  0% {
+    transform: scaleX(2) scaleY(2);
+  }
+  10% {
+    transform: scaleX(1.85) scaleY(1.85);
+  }
+  20% {
+    transform: scaleX(1.5) scaleY(1.5);
+  }
+  30% {
+    transform: scaleX(1.85) scaleY(1.85);
+  }
+  40% {
+    transform: scaleX(1.2) scaleY(1.2);
+  }
+  50% {
+    transform: scaleX(1.85) scaleY(1.85);
+  }
+  60% {
+    transform: scaleX(1.6) scaleY(1.6);
+  }
+  70% {
+    transform: scaleX(1.4) scaleY(1.4);
+  }
+  80% {
+    transform: scaleX(1.2) scaleY(1.2);
+  }
+  90% {
+    transform: scaleX(1) scaleY(1);
+  }
+  100% {
+    transform: scaleX(0.9) scaleY(0.9);
+  }
+}
+
+#heartwrap:hover > div {
+  animation: pulse 1300ms;
+}
+/*Herzschlaganimation endet hier*/
+
+#ueberschrift{
+  font-family: 'Lobster', cursive;
+}
+
+/*Darkmode beginnt hier*/
+.contentbox-change {
+  color: #ddd;
+ padding: 40px;
+ border: 5px;
+ border-style: solid;
+ border-color: #ddd;
+ z-index: 1;
+}
+.spreadbubble {
+ background-color: #111;
+ top:2%;
+ left:2%;
+ width: 50px;
+ height: 50px;
+ border-radius: 5000px;
+ position: fixed;
+ -webkit-transition: all 1s linear;
+ -moz-transition: all 1s linear;
+ -o-transition:  all 1s linear;
+ transition: all 1s ease-in;
+  z-index: -1;
+}
+.spreadbubble-change {  
+ top:-25%;
+ left:-25%;
+ margin:0px;
+ transform: scale(200,200);
+ border-radius: 5000px;
+ overflow:none;
+ z-index: -1;
+}
+.spreadbubble-change2 {
+ background-color: #fff;
+ top:2%;
+ left:2%;
+ width: 50px;
+ height: 50px;
+ border-radius: 5000px;
+ position: fixed;
+ -webkit-transition: all 1s linear;
+ -moz-transition: all 1s linear;
+ -o-transition:  all 1s linear;
+ transition: all 1s ease-in;
+  z-index: -1;
+}
+.spreadbubble2 {  
+ background-color:#fff;
+ top:-150%;
+ left:-150%;
+ margin:0px;
+ width: 100%;
+ height: 100%;
+ border-radius: 5000px;
+ overflow:none;
+ z-index: -1;
+}
+
+/*Darkmode endet hier*/
